@@ -1,0 +1,105 @@
+:root {
+  --primary: #1a1a1a;
+  --secondary: #303030;
+  --tertiary: #555555;
+  --quartenary: #8e8e8e;
+  --highlight: #ffc200;
+  --highlight-blue: #46b4e3;
+  --highlight-violet: #673ab7;
+  --highlight-violet-fading: #683ab773;
+  --highlight-violet-light: #9c27b0;
+  --text: #ffffff;
+}
+
+* {
+  color: var(--text);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.canva {
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__main > h2 {
+  font-size: 5rem;
+  font-variant: small-caps;
+  margin-bottom: 0;
+}
+
+.section__main > p {
+  margin-top: 10px;
+  color: var(--quartenary);
+  font-size: 1.5rem;
+}
+
+.button {
+  all: unset;
+  background-color: var(--highlight-violet-fading);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.discover-button {
+  width: 200px;
+  height: 60px;
+}
+
+.discover-button:hover {
+  background-color: var(--highlight-violet);
+}
+
+.discover-button > i {
+  margin-left: 10px;
+}
+
+@keyframes moveFirstPage {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-300%);
+  }
+}
+
+.moved {
+  animation: moveFirstPage;
+  animation-duration: 1.5s;
+}

@@ -1,0 +1,75 @@
+.explanation-card {
+  width: 80vw;
+
+  background-color: var(--secondary);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  margin: 40px 0;
+}
+
+.explanation-card > p {
+  text-align: justify;
+  padding-left: 20px;
+  border-left: 4px solid var(--quartenary);
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: var(--tertiary);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.explanation-card > div {
+  margin: 20px;
+}
+
+.explanation-card > div > a {
+  color: var(--highlight-blue);
+  background-color: var(--tertiary);
+  border-radius: 15px;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--secondary);
+
+  padding-top: 40px;
+}
+
+footer > p {
+  color: var(--quartenary);
+}
+
+.gemini-powered-by {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+
+  margin: 20px 0;
+}
+
+.highlighted-light {
+  padding-top: 30px;
+  color: var(--tertiary);
+}
+
+.gemini-logo {
+  height: 80px;
+}
